@@ -2,28 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
   <title>矩形计算器</title>
-  <link rel="stylesheet" href="rectangle.css"
+  <link rel="stylesheet" href="rectangle.css">
 </head>
 <body>
-  <div>
-    <label for="">长度：</label>
-    <input type="text" id="height">
+  <div class="main">
+    <label>宽度：</label> 
+    <input id="width" type="text" autofocus> 
+    <span>*</span>
     <br>
-    <label for="">宽度：</label>
-    <input type="text" id="width">
+    <div id="width-validate"></div>
+    <label>高度：</label>
+    <input id="height" type="text"> 
+    <span>*</span>
     <br>
-    
-    <input type="button" value="计算" id="calculate">
+    <div id="height-validate"></div>
+    <input id="calculate" type="button" value="计算">
     <br>
-    <label for="">周长：</label>
-    <input type="text" id="perimeter">
+    <label>周长：</label> 
+    <input id="perimeter" type="text" disabled="disabled">
     <br>
-    <label for="">面积：</label>
-    <input type="text" id="arear">
-    
+    <label for="">面积：</label> 
+    <input id="area" type="text" disabled="disabled">
   </div>
-  <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="rectangle.js"></script>
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="rectangle.js"></script> 
 </body>
 </html>
+
